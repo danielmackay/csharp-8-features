@@ -8,17 +8,33 @@ namespace CSharp8Features
     {
         static async Task Main(string[] args)
         {
-            //NullableTypes.Demo();
-            //await AsyncIterators.Demo();
-            //SwitchExpressions.Demo();
-            //Patterns.Demo1();
-            //Patterns.Demo2();
-            //UsingStatement.Demo1();
-            //UsingStatement.Demo2();
-            //StaticLocalFunctions.Demo1();
-            //StaticLocalFunctions.Demo2();
+            // NOTE: Comment / Uncomment demoes as desired
 
-            // DM TODO: Double check all demos are here
+            await AsyncIterators.Demo();
+
+            DefaultInterfaceMembers.Demo();
+
+            IndicesAndRanges.Demo1();
+            IndicesAndRanges.Demo2();
+            IndicesAndRanges.Demo3();
+            IndicesAndRanges.Demo4();
+            IndicesAndRanges.Demo5();
+
+            NullableTypes.Demo();
+
+            Patterns.Demo1();
+            Patterns.Demo2();
+
+            ReadOnlyMembers.Demo1();
+            ReadOnlyMembers.Demo2();
+
+            StaticLocalFunctions.Demo1();
+            StaticLocalFunctions.Demo2();
+
+            SwitchExpressions.Demo();
+
+            UsingStatement.Demo1();
+            UsingStatement.Demo2();
 
             Console.ReadKey();
 

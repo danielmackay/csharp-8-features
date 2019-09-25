@@ -30,7 +30,7 @@ namespace CSharp8Features.Demos
         public double Y { get; set; }
         public double Distance => Math.Sqrt(X * X + Y * Y);
 
-        public override string ToString() => $"({X}, {Y} is {Distance} from the origin)"
+        public override string ToString() => $"({X}, {Y} is {Distance} from the origin)";
 
         public void Translate(int xOffset, int yOffset)
         {
@@ -48,7 +48,7 @@ namespace CSharp8Features.Demos
         public double Y { get; set; }
         readonly public double Distance => Math.Sqrt(X * X + Y * Y);
 
-        readonly public override string ToString() => $"({X}, {Y} is {Distance} from the origin)"
+        readonly public override string ToString() => $"({X}, {Y} is {Distance} from the origin)";
 
         public void Translate(int xOffset, int yOffset)
         {
