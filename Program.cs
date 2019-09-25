@@ -31,7 +31,8 @@ namespace CSharp8Features
             StaticLocalFunctions.Demo1();
             StaticLocalFunctions.Demo2();
 
-            SwitchExpressions.Demo();
+            SwitchExpressions.Demo1();
+            SwitchExpressions.Demo2();
 
             UsingStatement.Demo1();
             UsingStatement.Demo2();

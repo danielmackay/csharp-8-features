@@ -13,6 +13,20 @@ namespace CSharp8Features.Demos
 
             var p2 = new PersonV2("Barney", "Rubble");
             GetMiddleNameLength(p2);
+
+            Weapon cantBeNull;
+            Weapon? canBeNull;
+
+            canBeNull = null;
+
+            // Note the compiler warning
+            cantBeNull = null;
+
+            canBeNull = new Weapon();
+            cantBeNull = new Weapon();
+
+            canBeNull.Repair();
+            cantBeNull.Repair();
         }
 
         // This works, but will fail
@@ -58,6 +72,11 @@ namespace CSharp8Features.Demos
             FirstName = firstName;
             LastName = lastName;
         }
+    }
+
+    public class Weapon
+    {
+        public void Repair() { }
     }
 
 }
